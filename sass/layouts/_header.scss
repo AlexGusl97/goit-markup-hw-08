@@ -1,0 +1,36 @@
+/* header */
+
+.header {
+  background-color: var(--main-background-color);
+  border-bottom: 1px solid var(--additional-color-second);
+  &__container {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  /* Лого header */
+
+  &__logo {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    color: var(--accent-color);
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: calc(31 / 26);
+    }
+
+    &--black {
+      color: var(--black-color);
+      font-family: Raleway;
+    }
+  }
+}

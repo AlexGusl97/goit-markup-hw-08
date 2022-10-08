@@ -1,0 +1,102 @@
+.button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+// Кнопка герой
+.hero__btn {
+  display: inline-block;
+  min-width: 216px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 24px;
+
+  font-family: inherit;
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
+}
+
+// Кнопки портфоліо
+.project-button {
+  display: inline-block;
+  padding: 6px 22px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-text-color);
+  background-color: var(--nav-button-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color var(--animation-time) var(--time-function),
+    background-color var(--animation-time) var(--time-function),
+    box-shadow var(--animation-time) var(--time-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--main-background-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+.project-btn:not(:last-child) {
+  margin-right: 8px;
+}
+
+// Кнопка закриття модалки
+.x-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.x-btn-svg {
+  fill: currentColor;
+}
+
+.form-send-btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--main-background-color);
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.9;
+}

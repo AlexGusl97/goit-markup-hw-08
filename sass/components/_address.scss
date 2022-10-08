@@ -1,0 +1,27 @@
+.address__contact {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--animation-time) var(--time-function),
+    background-color var(--animation-time) var(--time-function);
+}
+
+.address__location {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--main-background-color);
+  transition: color var(--animation-time) var(--time-function),
+    background-color var(--animation-time) var(--time-function);
+}
+.address__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+}

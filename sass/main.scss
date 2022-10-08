@@ -1,0 +1,30 @@
+// Base styles
+@import './base/base';
+@import './base/reset';
+@import './base/container';
+
+// Utils styles
+@import './utils/vars';
+@import './utils/normalizer';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+
+// Components styles
+@import './components/btn';
+@import './components/footer-form';
+@import './components/address';
+@import './components/modal-form';
+@import './components/modal';
+@import './components/hero';
+@import './components/features';
+@import './components/spec';
+@import './components/team';
+@import './components/clients';
+@import './components/mobile-menu';
+
+// Layouts styles
+@import './layouts/header';
+@import './layouts/navigation';
+@import './layouts/contacts';
+@import './layouts/footer';
+@import './layouts/portfolio';

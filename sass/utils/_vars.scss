@@ -1,0 +1,27 @@
+:root {
+  //  text-colors
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  // background-colors
+  --accent-color: #2196f3;
+  --main-background-color: #ffffff;
+  --cover-footer-color: #2f303a;
+  --black-color: #000000;
+  //   decoration-colors
+  --nav-button-color: #f5f4fa;
+  --additional-color-first: #eeeeee;
+  --additional-color-second: #ececec;
+  --icon-color: #afb1b8;
+  //   animation
+  --animation-time: 250ms;
+  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --project-card-color: rgba(33, 150, 243, 0.9);
+  //   fonts
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+}
+
+// breakpoints
+$mobile: 480px;
+$tablet: 720px;
+$desktop: 1200px;
