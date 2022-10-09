@@ -719,7 +719,7 @@ textarea :hover {
   .hero__title {
     font-size: 44px;
     line-height: 1.4;
-    width: 696px;
+    max-width: 696px;
   }
 }
 
