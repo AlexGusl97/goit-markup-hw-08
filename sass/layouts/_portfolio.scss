@@ -38,10 +38,6 @@
   }
 }
 
-.project-btn:not(:last-child) {
-  margin-right: 8px;
-}
-
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -49,8 +45,7 @@
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  gap: 30px;
 }
 
 .project-item {

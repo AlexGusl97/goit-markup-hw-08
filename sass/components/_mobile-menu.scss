@@ -116,13 +116,13 @@
 }
 
 .mobile-socials {
-  @media screen and (max-width: 436px) {
-    display: flex;
-    flex-direction: column;
-  }
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  @media screen and (max-width: 479px) {
+    gap: 5px;
+  }
 
   &__link {
     position: relative;
@@ -140,7 +140,7 @@
         display: none;
       }
       position: absolute;
-
+      margin-right: 5px;
       content: '';
       top: 0;
       right: -10px;
