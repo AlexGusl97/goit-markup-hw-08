@@ -19,6 +19,13 @@ p {
   font-family: var(--main-font);
 }
 
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .link {
   text-decoration: none;
 }
@@ -1218,18 +1225,20 @@ textarea :hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 10px;
 }
-@media screen and (max-width: 479px) {
-  .mobile-socials {
-    gap: 5px;
-  }
+.mobile-socials__item:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: solid rgba(33, 33, 33, 0.2) 1px;
 }
 .mobile-socials__link {
   position: relative;
@@ -1239,25 +1248,6 @@ textarea :hover {
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-}
-.mobile-socials__link::after {
-  position: absolute;
-  margin-right: 5px;
-  content: "";
-  top: 0;
-  right: -10px;
-  display: block;
-  width: 1px;
-  height: 22px;
-  background-color: rgba(33, 33, 33, 0.2);
-}
-@media screen and (max-width: 436px) {
-  .mobile-socials__link::after {
-    display: none;
-  }
-}
-.mobile-socials__link--not_after::after {
-  display: none;
 }
 
 /* header */
@@ -1635,7 +1625,6 @@ textarea :hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .project-item {
@@ -1657,12 +1646,21 @@ textarea :hover {
   line-height: 1.8;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .project-container {
   padding: 20px 24px;
+  border: 1px solid #eee;
   border-top: none;
-  border: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .project-container--first {
+    padding-bottom: 52px;
+  }
 }
 
 .project-desc {
